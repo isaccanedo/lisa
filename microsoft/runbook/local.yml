@@ -1,0 +1,11 @@
+name: local default
+include:
+  - path: ./tiers/tier.yml
+notifier:
+  - type: html
+environment:
+  environments:
+    - nodes:
+        - type: local
+platform:
+  - type: ready

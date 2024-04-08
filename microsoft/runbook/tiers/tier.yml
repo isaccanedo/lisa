@@ -1,0 +1,10 @@
+include:
+  - path: ./t$(tier).yml
+extension:
+  - ../../testsuites
+variable:
+  - name: tier
+    value: 0
+  # enable_tests takes boolean value. If False, testcase will not run.
+  - name: enable_tests
+    value: True

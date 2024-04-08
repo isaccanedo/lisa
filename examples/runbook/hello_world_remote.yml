@@ -1,0 +1,23 @@
+name: remote try
+extension:
+  - "../testsuites"
+environment:
+  environments:
+    - nodes:
+        - type: remote
+          port: 22
+          address: <ip or fqdn>
+          username: <username>
+          password: <your password or private_key_file>
+          private_key_file: <your password or private_key_file>
+        - type: remote
+          port: 22
+          address: <ip or fqdn>
+          username: <username>
+          password: <your password or private_key_file>
+          private_key_file: <your password or private_key_file>
+platform:
+  - type: ready
+testcase:
+  - criteria:
+      area: demo
